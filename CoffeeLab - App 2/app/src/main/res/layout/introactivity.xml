@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/discovery_bg"
+        android:scaleType="centerCrop" />
+
+    <!-- Intro Slides -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/introViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="150dp"
+        android:clipToPadding="false" />
+
+    <!-- Worm Dots -->
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="105dp"
+        app:dotsColor="#D8A46B"
+        app:selectedDotColor="#FFE8A3" />
+
+    <!-- Discover Button -->
+    <Button
+        android:id="@+id/btnDiscoverMore"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:text="Discover More"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="#B96A26"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="38dp" />
+
+</FrameLayout>

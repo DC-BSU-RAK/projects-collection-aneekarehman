@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:paddingTop="58dp"
+            android:paddingBottom="50dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/coffeelogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CoffeeLab"
+                android:textColor="#FFA000"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign up to start your coffee journey"
+                android:textColor="#FFF3E5"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textColor="#FFF3E5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/firstNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter your first name"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/input_bg"
+                android:textColor="#2A1A16"
+                android:textColorHint="#8C7A70"
+                android:textStyle="bold"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textColor="#FFF3E5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp" />
+
+            <EditText
+                android:id="@+id/lastNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter your last name"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/input_bg"
+                android:textColor="#2A1A16"
+                android:textColorHint="#8C7A70"
+                android:textStyle="bold"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#FFF3E5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter your email"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/input_bg"
+                android:textColor="#2A1A16"
+                android:textColorHint="#8C7A70"
+                android:textStyle="bold"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#FFF3E5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter your password"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/input_bg"
+                android:textColor="#2A1A16"
+                android:textColorHint="#8C7A70"
+                android:textStyle="bold"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="34dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#4A1F12"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/beige_button"
+                android:backgroundTint="@null" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

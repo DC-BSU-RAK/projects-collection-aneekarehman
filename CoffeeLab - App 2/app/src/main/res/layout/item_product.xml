@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productCard"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="12dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latte"
+        android:textSize="15sp"
+        android:textColor="#2A1A16"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/reviewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review Now →"
+        android:textSize="12sp"
+        android:textColor="#8F2416"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
