@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/videoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="1.05"
+        android:scaleY="1.0"
+        android:translationX="-10dp"
+        app:resize_mode="fill"
+        app:use_controller="false">
+
+        <ImageView
+            android:id="@+id/bookFantasy"
+            android:layout_width="73dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="327dp"
+            android:contentDescription="Fantasy book"
+            app:srcCompat="@drawable/cover_fantasy" />
+
+    </androidx.media3.ui.PlayerView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnMusic"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Open music settings"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/music_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnInfo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Show instructions"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/info_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/my_font"
+            android:text="ApolloLit"
+            android:textColor="#D3C37C"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/my_font"
+            android:text="Discover your myth"
+            android:textColor="#D3C37C"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/labelFantasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/my_font"
+            android:text="Fantasy"
+            android:textColor="#F1F6B1"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelScifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="268dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/my_font"
+            android:text="Sci-Fi"
+            android:textColor="#F1F6B1"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelMystery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="334dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/my_font"
+            android:text="Mystery"
+            android:textColor="#F1F6B1"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bookScifi"
+            android:layout_width="85dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="323dp"
+            android:contentDescription="Sci-Fi book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cover_scifi" />
+
+        <ImageView
+            android:id="@+id/bookMystery"
+            android:layout_width="78dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="323dp"
+            android:contentDescription="Mystery book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cover_mystery" />
+
+        <TextView
+            android:id="@+id/labelHorror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="425dp"
+            android:fontFamily="@font/my_font"
+            android:text="Horror"
+            android:textColor="#F1F6B1"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="425dp"
+            android:fontFamily="@font/my_font"
+            android:text="History"
+            android:textColor="#F1F6B1"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelRomance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="334dp"
+            android:layout_marginTop="425dp"
+            android:fontFamily="@font/my_font"
+            android:text="Romance"
+            android:textColor="#F1F6B1"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bookHorror"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="450dp"
+            android:contentDescription="Horror book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cover_horror" />
+
+        <ImageView
+            android:id="@+id/bookHistory"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="450dp"
+            android:contentDescription="History book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cover_history" />
+
+        <ImageView
+            android:id="@+id/bookRomance"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="450dp"
+            android:contentDescription="Romance book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cover_romance" />
+
+        <ImageView
+            android:id="@+id/bookBrief"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="580dp"
+            android:contentDescription="Brief length"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/length_brief" />
+
+        <ImageView
+            android:id="@+id/bookRegular"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="580dp"
+            android:contentDescription="Regular length"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/length_regular" />
+
+        <ImageView
+            android:id="@+id/bookComprehensive"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="580dp"
+            android:contentDescription="Comprehensive length"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/length_comprehensive" />
+
+        <FrameLayout
+            android:id="@+id/speechBubbleContainer"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="340dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/speech_bubble" />
+
+            <TextView
+                android:id="@+id/tvSpeechBubble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/my_font"
+                android:gravity="center"
+                android:text="Welcome, Reader! Choose your genre from the shelves..."
+                android:textColor="#3B2A1A"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btnFindStory"
+            android:layout_width="210dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Find my story"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@id/btnClear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookBrief"
+            app:srcCompat="@drawable/findmystory" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Clear selections"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/clear_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/bookPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="620dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/popupImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="Book recommendation" />
+
+            <ImageButton
+                android:id="@+id/btnClosePopup"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Close popup"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/close_button" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/musicPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="670dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/scroll" />
+
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_height="680dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music Volume"
+                android:fontFamily="@font/my_font"
+                android:textColor="#3B2A1A"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+
+            <SeekBar
+                android:id="@+id/seekBarVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnCloseMusic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="140dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Close music popup"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/close_button" />
+
+    </FrameLayout>
+
+</FrameLayout>
